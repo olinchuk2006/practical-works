@@ -1,0 +1,50 @@
+[
+    {
+        "dc:title": "Кобзар",
+        "dc:creator": "Тарас Шевченко",
+        "dc:date": "1840",
+        "dc:coverage": "Київ",
+        "dc:format": "application/pdf",
+        "dc:language": "uk"
+    },
+    {
+        "dc:title": "Енеїда",
+        "dc:creator": "Іван Котляревський",
+        "dc:date": "1798",
+        "dc:coverage": "Петербург",
+        "dc:format": "application/pdf",
+        "dc:language": "uk"
+    },
+    {
+        "dc:title": "Захар Беркут",
+        "dc:creator": "Іван Франко",
+        "dc:date": "1883",
+        "dc:coverage": "Львів",
+        "dc:format": "application/pdf",
+        "dc:language": "uk"
+    },
+    {
+        "dc:title": "Джейн Ейр",
+        "dc:creator": "Шарлота Бронте",
+        "dc:date": "2022",
+        "dc:coverage": "Харків",
+        "dc:format": "application/pdf",
+        "dc:language": "uk"
+    },
+    {
+        "dc:title": "Галант",
+        "dc:creator": "Вікторія Шваб",
+        "dc:date": "2022",
+        "dc:coverage": "Київ",
+        "dc:format": "application/pdf",
+        "dc:language": "uk"
+    },
+    {
+        "dc:title": "Цирцея",
+        "dc:creator": "Медалін Маєр",
+        "dc:date": "2023",
+        "dc:coverage": "Харків",
+        "dc:format": "application/pdf",
+        "dc:language": "uk"
+    }
+]
