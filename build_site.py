@@ -12,28 +12,18 @@ html_content = """
 <head>
     <meta charset="UTF-8">
     <title>Цифровий архів</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f9; padding: 20px; }
-        h1 { text-align: center; color: #333; }
-        /* Дизайн нашої каталожної картки */
-        .card { 
-            background: white; 
-            border-radius: 8px; 
-            padding: 15px; 
-            margin-bottom: 15px; 
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-            border-left: 5px solid #4CAF50; /* Зелена смужка зліва */
-        }
-        .card h2 { margin-top: 0; color: #2c3e50; }
-        .meta { color: #555; margin: 5px 0; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Колекція рідкісних видань</h1>
 """
-
 # КРОК 3: Запускаємо цикл для генерації карток
 # Проходимося по кожній книжці у нашому списку digital_archive
+def format_year(year):
+    if year and str(year).strip():
+        return f"Видано у {year} р."
+    else:
+        return "Рік видання невідомий"
 for book in digital_archive:
     
     # Використовуємо f-рядок для підстановки даних у HTML-теги
@@ -42,8 +32,10 @@ for book in digital_archive:
     <div class="card">
         <h2>{book['dc:title']}</h2>
         <p class="meta"><strong>Автор:</strong> {book['dc:creator']}</p>
-        <p class="meta"><strong>Рік видання:</strong> {book['dc:date']}</p>
+        <p class="meta"><strong>Рік видання:</strong> {format_year(book.get('dc:date', ''))}</p
         <p class="meta"><strong>Місце видання:</strong> {book['dc:coverage']}</p>
+        <p class="meta"><strong>Мова:</strong> {book['dc:language']}</p>
+        
     </div>
     """
     
