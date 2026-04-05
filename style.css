@@ -41,3 +41,34 @@ h1 {
     gap: 20px; /* Встановлює відстань між картками */
     flex-wrap: wrap; /* Дозволяє перенесення карток на новий рядок */
 }
+/* Стиль для детальної сторінки книги */
+.detail-card {
+    background: white;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    border-left: 6px solid #27ae60;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Мітка [Антикваріат] */
+.badge {
+    background-color: #e74c3c;
+    color: white;
+    font-size: 0.75em;
+    padding: 2px 8px;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+/* Посилання «Детальніше» на картці каталогу */
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #c509d6;
+    text-decoration: none;
+    font-weight: bold;
+}
+.card a:hover { text-decoration: underline; }
